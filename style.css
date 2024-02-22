@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background: linear-gradient(to left top, rgb(12, 12, 156), rgb(1, 185, 176));
+    height: 100vh;
+    text-align: center;
+    color: white;
+}
+
+main h1{
+    font-size: 3.5rem;
+    text-shadow: 2px 2px yellowgreen;
+}
+
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    font-size: 8vmin;
+    color: #311a99;
+    background: linear-gradient(to left top, rgb(133, 133, 133), rgb(255, 255, 255));
+    cursor: pointer;
+    transition: 0.8s ease;
+}
+.box:hover{
+    box-shadow: 1px 1px 2px 2px rgb(29, 224, 191);
+    transform: scale(1.01);
+}
+
+#reset-btn {
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: #191919;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: 0.8s ease;
+}
+
+#new-btn {
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: #191919;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: 0.8s ease;
+}
+
+#msg {
+    color: #ffffc7;
+    font-size: 10vmin;
+}
+
+.msg-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
+#new-btn:hover,#reset-btn:hover{
+    box-shadow: 1px 1px 2px 2px rgb(29, 224, 191);
+    transform: scale(1.08);
+}
